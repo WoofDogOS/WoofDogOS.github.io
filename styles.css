@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #111;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00ff80;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #00cc66;
+}
+
+/* Sections */
+.section {
+    padding: 100px 0;
+    background: black;
+}
+
+.section:nth-child(odd) {
+    background: #1a1a1a;
+}
+
+.section h2 {
+    font-size: 2rem;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    background: #0f0c29;
+    color: #888;
+}
+
+/* Animations */
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
